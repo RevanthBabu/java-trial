@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: rgba(40,44,52,0.95);
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu button,
+.menu span,
+.menu a {
+  background: #282c34;
+  color: #61dafb;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.menu button:hover,
+.menu a:hover {
+  background: #61dafb;
+  color: #282c34;
+}
+
+.menu .dropdown-content {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 2.5rem;
+  background: #20232a;
+  min-width: 180px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+  border-radius: 8px;
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu .dropdown:not(:focus-within):not(:hover) .dropdown-content {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu .dropdown-content li {
+  margin: 0;
+}
+
+.menu .dropdown-content button,
+.menu .dropdown-content a {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  background: none;
+  color: #fff;
+  border-bottom: 1px solid #444;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  text-decoration: none;
+  display: block;
+  pointer-events: auto;
+}
+
+.menu .dropdown-content button:last-child,
+.menu .dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.corporate-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2.5rem 0 0 0;
+}
+
+.corporate-gallery img {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  transition: transform 0.2s;
+}
+
+.corporate-gallery img:hover {
+  transform: scale(1.04);
+}
+
+.form-container {
+  background: #fff;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-container h2 {
+  margin-bottom: 1.5rem;
+  color: #282c34;
+}
+
+.form-container label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-container input {
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #b0b0b0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.form-container button {
+  background: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+.form-container button:hover {
+  background: #21a1f3;
+  color: #fff;
+}
+
+.message {
+  margin-top: 1rem;
+  color: #21a1f3;
+  font-weight: 500;
+}
+
+.table-container {
+  background: #fff;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+
+.table-container h2 {
+  margin-bottom: 1.5rem;
+  color: #282c34;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.table-container th {
+  background: #f5f7fa;
+  color: #282c34;
+}
+
+.table-container tr:hover {
+  background: #f0f8ff;
+}
